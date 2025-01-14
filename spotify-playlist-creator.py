@@ -9,8 +9,8 @@ def setup_spotify():
     scope = "playlist-modify-public"
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
         scope=scope,
-        client_id="6e1fcb4ab47648448fc1c72c0d4bec23",
-        client_secret="ce5cf22508d2488cb17df34209b3978d",
+        client_id="YOUR_CLIENT_ID",
+        client_secret="YOUR_CLIENT_SECRET",
         redirect_uri="http://localhost:8888/callback"
     ))
     return sp
