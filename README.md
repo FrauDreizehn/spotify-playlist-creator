@@ -26,6 +26,32 @@ You can install the required libraries using pip:
 
 Usage
 
+Set up a Spotify Developer account:
+
+Go to https://developer.spotify.com/dashboard
+Create a new application
+Get your Client ID and Client Secret
+Add http://localhost:8888/callback to your app's Redirect URIs in the settings
+
+
+Replace these values in the script:
+
+YOUR_CLIENT_ID with your actual Spotify Client ID
+YOUR_CLIENT_SECRET with your actual Spotify Client Secret
+
+
+
+When you run the script, it will:
+
+Authenticate with Spotify (opens a browser window for login)
+Scrape Every Noise
+Create a new public playlist on your account
+Search for each song and add it to the playlist
+Show you which songs were found and added
+Provide the URL of the created playlist
+
+The script handles Spotify's API limits and provides feedback about which songs it couldn't find (since some songs from Every Noise might not be available on Spotify or might have slightly different names).
+
 Clone the repository:
 
     git clone https://github.com/yourusername/spotify-playlist-creator.git
